@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(14, 139, 14);
+    border-radius: 80px 0 80px 0;
+
+    position: relative;
+    /* nomi */
+    animation-name: axel;
+    /* davomiyligi */
+    animation-duration: 3s;
+    /* kutish vaqti */
+    animation-delay: 1s;
+    /* animation soni = infinite */
+    animation-iteration-count: infinite;
+    /* yo'nalish */
+    animation-direction: alternate;
+    /* holati */
+    animation-timing-function: linear;
+    /* to - holatida qoladi */
+    animation-fill-mode: forwards;
+}
+@keyframes axel {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 1000px;
+        top: 0;
+    }
+    50%{
+        left: 1000px;
+        top: 500px;
+    }
+    75%{
+       top: 500px;
+       left: 0;
+    }
+}
+
+
+
+
+/* @keyframes axel {
+    from{
+        left: 0;
+        
+    }
+    to{
+        left: 500px;
+        border-radius: 0 80px 0 80px;
+        background-color: rgb(214, 112, 9);
+    }
+} */
